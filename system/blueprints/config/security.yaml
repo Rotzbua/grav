@@ -105,3 +105,37 @@ form:
             validate:
                 type: commalist
 
+        xss_header_section:
+            type: section
+            title: "Browser Security"
+            underline: true
+
+
+        security_header.send_referrer:
+            type: toggle
+            label: "Change referer behaviour"
+            highlight: 1
+            options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+            default: true
+            validate:
+                type: bool
+
+        security_header.send_referrer_policy:
+            type: select
+            size: medium
+            classes: fancy
+            label: "Referrer Policy"
+            help: "Avoid leak information to other sites"
+            default: 1
+            options:
+                1: no-referrer
+                2: no-referrer-when-downgrade
+                3: same-origin
+                4: origin
+                5: strict-origin
+                6: origin-when-cross-origin
+                7: strict-origin-when-cross-origin
+                8: unsafe-url
+

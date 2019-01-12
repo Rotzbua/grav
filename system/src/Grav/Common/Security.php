@@ -162,4 +162,24 @@ class Security
 
         return false;
     }
+	
+	/**
+	 * Determine if string potentially has a XSS attack. This simple function does not catch all XSS and it is likely to
+	 * return false positives because of it tags all potentially dangerous HTML tags and attributes without looking into
+	 * their content.
+	 *
+	 * @param string $string The string to run XSS detection logic on
+	 * @return boolean|string       Type of XSS vector if the given `$string` may contain XSS, false otherwise.
+	 */
+	public static function useReferrerPolicy($string): bool
+	{
+		$config = Grav::instance()['config'];
+		
+		$enabled_rules = $config->get('security.xss_enabled');
+		
+
+		
+		return false;
+	}
+	
 }

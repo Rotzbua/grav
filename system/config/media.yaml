@@ -6,20 +6,26 @@ types:
     image:
       filters:
         default:
-          - enableProgressive
+          - grayscale
 
   jpg:
     type: image
     thumb: media/thumb-jpg.png
     mime: image/jpeg
+    filters:
+      - grayscale
   jpe:
     type: image
     thumb: media/thumb-jpg.png
     mime: image/jpeg
+    filters:
+      - grayscale
   jpeg:
     type: image
     thumb: media/thumb-jpg.png
     mime: image/jpeg
+    filters:
+      - grayscale
   png:
     type: image
     thumb: media/thumb-png.png

@@ -538,7 +538,38 @@ class Page implements PageInterface
         if ($grav['config']->get('system.pages.vary_accept_encoding', false)) {
             $headers['Vary'] = 'Accept-Encoding';
         }
-
+	
+		if( $grav['config']->get('security.security_header.send_referrer', false) ){
+			switch( (int)$grav['config']->get('security.security_header.send_referrer_policy', 0) ){
+				case 1:
+					$headers['Referrer-Policy'] = 'no-referrer';
+					break;
+				case 2:
+					$headers['Referrer-Policy'] = 'no-referrer-when-downgrade';
+					break;
+				case 3:
+					$headers['Referrer-Policy'] = 'same-origin';
+					break;
+				case 4:
+					$headers['Referrer-Policy'] = 'origin';
+					break;
+				case 5:
+					$headers['Referrer-Policy'] = 'strict-origin';
+					break;
+				case 6:
+					$headers['Referrer-Policy'] = 'origin-when-cross-origin';
+					break;
+				case 7:
+					$headers['Referrer-Policy'] = 'strict-origin-when-cross-origin';
+					break;
+				case 8:
+					$headers['Referrer-Policy'] = 'unsafe-url';
+			}
+		}
+		
+		$headers['X-Xss-Protection'] = '1; mode=block';
+		$headers['X-Content-Type-Options'] = 'nosniff';
+		$headers['X-Frame-Options'] = 'SAMEORIGIN';
         return $headers;
     }
 

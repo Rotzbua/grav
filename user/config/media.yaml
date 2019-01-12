@@ -1,0 +1,31 @@
+types:
+  defaults:
+    type: file
+    thumb: media/thumb.png
+    mime: application/octet-stream
+    image:
+      filters:
+          - grayscale
+
+  jpg:
+    type: image
+    thumb: media/thumb-jpg.png
+    mime: image/jpeg
+    filters:
+      - grayscale
+  jpe:
+    type: image
+    thumb: media/thumb-jpg.png
+    mime: image/jpeg
+    filters:
+      - grayscale
+  jpeg:
+    type: image
+    thumb: media/thumb-jpg.png
+    mime: image/jpeg
+    filters:
+      - grayscale
+  png:
+    type: image
+    thumb: media/thumb-png.png
+    mime: image/png

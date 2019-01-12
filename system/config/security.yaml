@@ -36,3 +36,6 @@ uploads_dangerous_extensions:
     - htm
     - js
     - exe
+security_header:
+    send_referrer: true
+    send_referrer_policy: '2'
