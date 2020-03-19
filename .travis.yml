@@ -4,6 +4,13 @@ php:
   - '7.2'
   - '7.3'
   - '7.4'
+jobs:
+  include:
+  - php: nightly
+    env: KEY=VALUE
+  allow_failures:
+  - php: nightly
+    env: KEY=VALUE
 branches:
   only:
     - develop
