@@ -6,10 +6,10 @@ php:
   - '7.4'
 jobs:
   include:
-  - php: 8.0
+  - php: 8.0snapshot
     env: KEY=VALUE
   allow_failures:
-  - php: 8.0
+  - php: 8.0snapshot
     env: KEY=VALUE
 branches:
   only:
