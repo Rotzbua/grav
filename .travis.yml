@@ -6,9 +6,6 @@ php:
   - '7.4'
   - '8.0'
 jobs:
-  include:
-  - php: 8.0
-    env: KEY=VALUE
   allow_failures:
   - php: 8.0
     env: KEY=VALUE
