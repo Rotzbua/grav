@@ -175,7 +175,14 @@ trait ParsedownGravTrait
      */
     public function elementToHtml(array $Element)
     {
-        return $this->element($Element);
+        $html = $this->element($Element);
+//        $pos  = strrpos($html, ' />');
+//        if( $pos!==false ){
+//            $search_length = strlen(' />');
+//            $html          = substr_replace($html, '>', $pos, $search_length);
+//        }
+        $html = str_replace($html, ' />', '>');
+        return $html;
     }
 
     /**
