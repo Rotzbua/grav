@@ -79,7 +79,7 @@ class ExcerptsTest extends \Codeception\TestCase\Test
     public function testProcessImageHtml(): void
     {
         self::assertRegexp(
-            '|<img alt="Sample Image" src="\/images\/.*-sample-image.jpe?g\" data-src="sample-image\.jpg\?cropZoom=300,300" \/>|',
+            '|<img alt="Sample Image" src="\/images\/.*-sample-image.jpe?g\" data-src="sample-image\.jpg\?cropZoom=300,300">|',
             Excerpts::processImageHtml('<img src="sample-image.jpg?cropZoom=300,300" alt="Sample Image">', $this->page)
         );
         self::assertRegexp(
