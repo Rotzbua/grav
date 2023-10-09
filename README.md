@@ -119,19 +119,19 @@ If you discover a possible security issue related to Grav or one of its plugins,
 # Backers
 Support Grav with a monthly donation to help us continue development. [[Become a backer](https://opencollective.com/grav/contribute)]
 
-<img src="https://opencollective.com/grav/tiers/backers.svg?avatarHeight=36&width=600" />
+<img src="https://opencollective.com/grav/tiers/backers.svg?avatarHeight=36&width=600">
 
 
 # Supporters
 Support Grav with a monthly donation to help us continue development. [[Become a supporter](https://opencollective.com/grav/contribute)]
 
-<img src="https://opencollective.com/grav/tiers/supporters.svg?avatarHeight=36&width=600" />
+<img src="https://opencollective.com/grav/tiers/supporters.svg?avatarHeight=36&width=600">
 
 
 # Sponsors
 Support Grav with a yearly donation to help us continue development. [[Become a sponsor](https://opencollective.com/grav/contribute)]
 
-<img src="https://opencollective.com/grav/tiers/sponsors.svg?avatarHeight=36&width=600" />
+<img src="https://opencollective.com/grav/tiers/sponsors.svg?avatarHeight=36&width=600">
 
 # License
 

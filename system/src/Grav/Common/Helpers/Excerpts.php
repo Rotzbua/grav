@@ -26,7 +26,7 @@ class Excerpts
     /**
      * Process Grav image media URL from HTML tag
      *
-     * @param string $html              HTML tag e.g. `<img src="image.jpg" />`
+     * @param string $html              HTML tag e.g. `<img src="image.jpg">`
      * @param PageInterface|null $page  Page, defaults to the current page object
      * @return string                   Returns final HTML string
      */
@@ -144,7 +144,7 @@ class Excerpts
             $html .= is_array($element['text']) ? static::getHtmlFromExcerpt(['element' => $element['text']]) : $element['text'];
             $html .= '</'.$element['name'].'>';
         } else {
-            $html .= ' />';
+            $html .= '>';
         }
 
         return $html;
