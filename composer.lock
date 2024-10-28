@@ -673,17 +673,17 @@
         },
         {
             "name": "getgrav/cache",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "target-dir": "Gregwar/Cache",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getgrav/Cache.git",
-                "reference": "56fd63f752779928fcd1074ab7d12f406dde8861"
+                "reference": "28e2b0072add37b9547daea1da6fcd26d660850b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getgrav/Cache/zipball/56fd63f752779928fcd1074ab7d12f406dde8861",
-                "reference": "56fd63f752779928fcd1074ab7d12f406dde8861",
+                "url": "https://api.github.com/repos/getgrav/Cache/zipball/28e2b0072add37b9547daea1da6fcd26d660850b",
+                "reference": "28e2b0072add37b9547daea1da6fcd26d660850b",
                 "shasum": ""
             },
             "require": {
@@ -718,9 +718,9 @@
                 "system"
             ],
             "support": {
-                "source": "https://github.com/getgrav/Cache/tree/v2.0.0"
+                "source": "https://github.com/getgrav/Cache/tree/v2.0.1"
             },
-            "time": "2021-04-20T05:48:00+00:00"
+            "time": "2024-10-25T14:21:29+00:00"
         },
         {
             "name": "getgrav/image",
