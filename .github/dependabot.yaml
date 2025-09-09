@@ -14,14 +14,3 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
-    versioning-strategy: increase-if-necessary
-    groups:
-      all-deps:
-        patterns:
-          - "*"
-      patch-updates:
-        update-types:
-          - "patch"
-      minor-updates:
-        update-types:
-          - "minor"
