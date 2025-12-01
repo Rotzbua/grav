@@ -49,7 +49,7 @@
         "getgrav/image": "^4.0",
         "getgrav/cache": "^2.0",
         "donatj/phpuseragentparser": "~1.1",
-        "pimple/pimple": "~3.5.0",
+        "pimple/pimple": "~3.6.0",
         "rockettheme/toolbox": "~1.5",
         "maximebf/debugbar": "~1.16",
         "league/climate": "^3.6",
